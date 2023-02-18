@@ -150,7 +150,7 @@ switch(programa){
         Sugerenias();
         break;
     case 5:
-        ver();
+        verNomas();
         break;
     default:
         alert ("Ingrese una opcion valida");

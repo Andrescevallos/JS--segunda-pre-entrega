@@ -99,7 +99,15 @@ function ver(){
 function buscar(){
     let buscado = prompt("Cual estas buscando?")
     let funcoBuscado = arrayFuncos.find(funcos => funcos.personaje === buscado)
-    console.log(funcoBuscado)
+    let tenemosEse = arrayFuncos.some(funcos => funcos.personaje === buscado)
+    if (tenemosEse === true){
+        console.log("busqueda: encontrado")
+        console.log(funcoBuscado)
+    }
+    else{
+        console.log("No encontrado. No se encunetra en stock o ingrese un funco valido")
+    }
+    
 }
 
 function comprarYa (){

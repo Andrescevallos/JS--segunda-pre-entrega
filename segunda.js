@@ -60,7 +60,7 @@ function home(){
 
 function ver(){
     let verTodos = arrayFuncos.forEach( funcos => console.log(funcos))
-    let filtrar = prompt("filtrar por precio o nombre?")
+    let filtrar = prompt("Filtrar por precio o nombre? ninguno??")
     switch(filtrar){
         case "precio" : 
             arrayFuncos.sort((a,b) => b.costo - a.costo)
